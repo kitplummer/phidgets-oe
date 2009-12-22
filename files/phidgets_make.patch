@@ -1,0 +1,22 @@
+diff -Naur Phidgetlinux_orig/phidget21/Makefile Phidgetlinux/phidget21/Makefile
+--- Phidgetlinux_orig/phidget21/Makefile	2009-01-27 15:35:26.000000000 -0700
++++ Phidgetlinux/phidget21/Makefile	2009-01-27 15:37:35.000000000 -0700
+@@ -1,7 +1,7 @@
+-PREFIX=/usr
++PREFIX=$(D)
+ DEBUG?=n
+ DMALLOC?=n
+-JAVA?=y
++JAVA?=n
+ CROSSCOMPILE?=n
+ ZEROCONF?=avahi
+ ZEROCONF_LOOKUP?=n
+@@ -158,7 +158,7 @@
+ 
+ install: all
+ 	$(INSTALL_LIB) libphidget21.so $(INSTALLPREFIX)/$(PREFIX)/lib
+-	$(INSTALL_FILE) phidget21.h $(INSTALLPREFIX)/$(PREFIX)/include
++#	$(INSTALL_FILE) phidget21.h $(INSTALLPREFIX)/$(PREFIX)/include
+ 
+ uninstall:
+ 	-rm $(INSTALLPREFIX)/$(PREFIX)/lib/libphidget21.*

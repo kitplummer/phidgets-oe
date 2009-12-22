@@ -1,0 +1,9 @@
+h1. phidgets-oe Bitbake Recipe
+
+phidgets-oe is a Bitbake recipe for the "Phidgets":http://www.phidgets.com Linux library.
+
+h2. Using
+
+Clone into your ${OE_HOME}/user.collection/packages subdirectory
+
+The 'bitbake phidgets-oe'
